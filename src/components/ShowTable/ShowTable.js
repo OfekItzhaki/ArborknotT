@@ -133,13 +133,13 @@ export default function Page() {
     return (
         <div className={styles.show_table}>
             <div className={styles.content__container}>
-                <div className={styles.buttons__container}>
+                <div className={styles.buttons__container + " one_line_div"}>
                     <h1> Operators </h1>
                     <button onClick={() => handleDownload() }> <DownloadIcon/> </button>
                     <button onClick={() => handleAddOperator() }> Add operator </button>
                 </div>
 
-                <div className={styles.table__container}>
+                <div className={styles.table__container + " white_background"}>
                     {statuses &&
                     (<Menu
                         placeholder={sortBy}

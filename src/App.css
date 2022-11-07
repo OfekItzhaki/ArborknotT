@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   margin-top: 5%;
   margin-right: 20%;
   margin-left: 20%;
@@ -7,4 +6,17 @@
 
 .white_background {
   background-color: white;
+}
+
+.one_line_div {
+  margin: 20px 0;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
 }

@@ -45,21 +45,22 @@ export default function AddOperator() {
     <div className={styles.add_operator}>
         <div className={styles.content__container}>
 
-            <div className={styles.buttons__container}>
+            <div className={styles.title__container}>
                 <button onClick={() => handleBack() }> <ArrowLeftIcon/> </button>
                 <h1> Add Operator </h1>
             </div>
 
             <div className={styles.operator_details__container + " white_background"}>
-                <div className='name__container'>
+                <h2> Operator details </h2>
+                <div className={styles.name__container}>
                     <Input label='Name'/>
                 </div>
 
-                <div className='website_url__container'>
+                <div className={styles.website_url__container}>
                     <Input label='Website URL'/>
                 </div>
 
-                <div className='menu__container'>
+                <div className={styles.meny__container}>
                     {countries &&
                     (<Menu
                         label='Country'
@@ -71,18 +72,19 @@ export default function AddOperator() {
             </div>
 
             <div className={styles.design__container + " white_background"}>
-                <h1> Design </h1>
-                <div className='logo__container'>
+                <h2> Design </h2>
+                <div className={styles.logo__container}>
                     <Label> Logo </Label>
                     <UploadFile description='Upload new logo' />
                 </div>
 
-                <div className='color__container'>
+                <div className={styles.color__container}>
+                    <Label> Color </Label>
                     <p> Pick color </p>
                 </div>
             </div>
 
-            <div className='buttons__container'>
+            <div className={styles.buttons__container}>
                 <button onClick={() => handleBack() }> Cancel </button>
                 <button onClick={() => handleAddOperator() }> Add Operator </button>
             </div>
