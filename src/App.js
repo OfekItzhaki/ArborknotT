@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from 'react-router-dom';
 import './App.css';
+import ShowTable from './components/ShowTable/ShowTable';
+import AddOperator from './components/AddOperator/AddOperator';
+import Error404 from './components/Error404/Error404';
+import "@arborknot/design-system-v2/dist/bundle.css";
+import "@arborknot/design-system-v2/dist/components.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+
+          <Route path="/" element={< ShowTable />} />
+          <Route path="/showtable" element={< ShowTable />} />
+          <Route path="/addoperator" element={< AddOperator />} />
+
+
+
+          <Route path="/error404" element={< Error404 />} />
+          <Route path="*" element={<Navigate to="/error404" replace />} /> 
+        </Routes>
+      </Router>
     </div>
   );
 }
