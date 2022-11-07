@@ -6,18 +6,21 @@
     
 }
 
-.title__container {
+.content__container > div {
+    padding: 2%;
     margin-bottom: 5%;
+}
+
+.title__container {
+
 }
 
 .operator_details__container {
-    margin-bottom: 5%;
-    padding: 2%;
+
 }
 
 .design__container {
-    margin-bottom: 5%;
-    padding: 2%;
+    
 }
 
 .buttons__container {

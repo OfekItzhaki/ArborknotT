@@ -2,12 +2,24 @@
 
 }
 
+.buttons__container {
+    
+}
+
+.buttons__container > * {
+    width: fit-content;
+    height: fit-content;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+}
+
 .content__container {
     
 }
 
 .table__container {
-    
+
 }
 
 .above_table { 
